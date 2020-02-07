@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Browser Control 4</title>
+</head>
+
+<body>
+<script>
+
+function checkPopBlocker() {
+  var monkeyWindow = window.open("file:///C:/Users/hp/Documents/WebDocument/JS/JSFILES/Labyrinth.html", "win1", "width=420,height=380,left=200,top=100");
+  if (monkeyWindow === null || typeof(monkeyWindow === "undefined")) {
+    alert("Please disable your popup blocker.");
+  }
+  window.close();
+}
+
+checkPopBlocker();
+
+</script>
+
+</body>
+</html>
